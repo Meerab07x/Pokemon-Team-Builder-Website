@@ -1,24 +1,52 @@
-when you download this zip, go on cmd and run: 
+Pokémon Team Builder Website
 
-cd (filename)
+## Installation
 
-npm install
+1. Download the ZIP and extract the project.
+2. Open a terminal and navigate into the folder:
 
-then
+   ```bash
+   cd <foldername>
+   ```
+3. Install frontend dependencies:
 
-pip install flask flask-cors mysql-connector-python bcrypt flask_jwt_extended
+   ```bash
+   npm install
+   ```
+4. Install backend dependencies:
 
-but if the code above doesn't work, then try:
+   ```bash
+   pip install flask flask-cors mysql-connector-python bcrypt flask_jwt_extended
+   ```
 
-py -3 -m pip install --user flask flask-cors mysql-connector-python bcrypt flask_jwt_extended
+   If that doesn't work, try:
 
+   ```bash
+   py -3 -m pip install --user flask flask-cors mysql-connector-python bcrypt flask_jwt_extended
+   ```
 
-this downloads all the necessary dependencies for the website to run
+## Running the Backend
 
-when you have the project opened in your vscode, type (in terminal) 'python app.py' or 'py app.py' (if the first one doesn't work). for mac users, it is 'python3 app.py'. this runs the python file in order for the backend database to run
+Open VS Code and in the terminal run:
 
+```bash
+python app.py   # or py app.py
+# Mac users:
+python3 app.py
+```
 
+This starts the Flask backend.
 
-this project was created with react js + node + sql 
+## Database Setup
 
-<3
+* Install and open **XAMPP**
+* Start **Apache** and **MySQL**
+* Go to `localhost/phpmyadmin`
+* Create the database using the included SQL file
+* User logins are stored securely (passwords are hashed)
+
+## Tech Stack
+
+React.js • Node.js • Flask • MySQL
+
+❤️
